@@ -9,6 +9,7 @@ import {
   Send,
   Twitter,
 } from "lucide-react";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -33,13 +34,13 @@ export function Footer() {
               <ul className="space-y-4">
                 {["CONTAGION", "SYMPTOMS", "PREVENTION"].map((item) => (
                   <li key={item}>
-                    <a
-                      href={`#${item.toLowerCase()}`}
+                    <Link
+                      href={`/${item.toLowerCase()}`}
                       className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
                     >
                       <span className="text-xs">▶</span>
                       {item}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
