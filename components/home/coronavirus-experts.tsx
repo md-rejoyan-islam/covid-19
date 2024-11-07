@@ -65,47 +65,47 @@ export function CoronavirusExperts() {
                 <div className=" absolute translate-y-32 group-hover:translate-y-0 transition-all duration-300  bottom-0 w-full bg-[#ef4d27] text-[#ef4d27] z-10 py-[26px]">
                   <ul className="flex items-center justify-center gap-4">
                     <li
-                      className="border h-8 w-8 p-1.5 bg-white  rounded-full flex items-center justify-center cursor-pointer 
+                      className="border h-8 w-8  bg-white  rounded-full flex items-center justify-center cursor-pointer 
                     hover:animate-[spin_.5s]"
                     >
                       <Link
                         href="https://www.facebook.com/md.rej0yan.islam"
                         target="_black"
                       >
-                        <Facebook />
+                        <Facebook className="p-[3px]" />
                       </Link>
                     </li>
                     <li
-                      className="border h-8 w-8 p-1.5 bg-white  rounded-full flex items-center justify-center cursor-pointer 
+                      className="border h-8 w-8  bg-white  rounded-full flex items-center justify-center cursor-pointer 
                     hover:animate-[spin_.5s]"
                     >
                       <Link
                         href={"https://www.instagram.com/md.rejoyan.islam"}
                         target="_black"
                       >
-                        <Instagram />
+                        <Instagram className="p-[3px]" />
                       </Link>
                     </li>
                     <li
-                      className="border h-8 w-8 p-1.5 bg-white  rounded-full flex items-center justify-center cursor-pointer 
+                      className="border h-8 w-8  bg-white  rounded-full flex items-center justify-center cursor-pointer 
                     hover:animate-[spin_.5s]"
                     >
                       <Link
                         href={"https://x.com/md_rejoyanislam"}
                         target="_black"
                       >
-                        <Twitter />
+                        <Twitter className="p-[3px]" />
                       </Link>
                     </li>
                     <li
-                      className="border h-8 w-8 p-1.5 bg-white  rounded-full flex items-center justify-center cursor-pointer 
+                      className="border h-8 w-8  bg-white  rounded-full flex items-center justify-center cursor-pointer 
                     hover:animate-[spin_.5s]"
                     >
                       <Link
                         href="https://www.linkedin.com/in/md-rejoyan-islam"
                         target="_black"
                       >
-                        <Linkedin />
+                        <Linkedin className="p-[3px]" />
                       </Link>
                     </li>
                   </ul>
