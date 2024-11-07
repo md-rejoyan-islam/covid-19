@@ -24,8 +24,6 @@ import { CalendarIcon, Send } from "lucide-react";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-import SubTitle from "./home/sub-title";
-import Title from "./home/title";
 
 const formSchema = z.object({
   fullName: z.string().min(2, {
@@ -47,7 +45,7 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
-export function ContactForm() {
+export function Contact({ children }: { children: React.ReactNode }) {
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -69,11 +67,7 @@ export function ContactForm() {
       id="contact"
     >
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <div className="text-center mb-8">
-          <SubTitle title="COVID-19" color="text-[#ef4d27]" />
-          <Title title="Contact Us" color="text-[#0e6dc5]" />
-        </div>
-
+        {children}
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <Form {...form}>
             <form

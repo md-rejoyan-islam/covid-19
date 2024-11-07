@@ -1,17 +1,16 @@
 import { ContactForm } from "@/components/contact-form";
-import { CoronavirusExperts } from "@/components/coronavirus-experts";
-import { CovidLiveReports } from "@/components/covid-live-reports";
-import { CovidPrecautions } from "@/components/covid-precautions";
-import { CovidPreventions } from "@/components/covid-preventions";
-import CovidStatistics from "@/components/covid-statistics";
-import DiseaseInfo from "@/components/disease-info";
-import { Footer } from "@/components/footer";
-import HeroSection from "@/components/hero-section";
-import { SymptomsSection } from "@/components/symptoms-section";
+import { CoronavirusExperts } from "@/components/home/coronavirus-experts";
+import { CovidLiveReports } from "@/components/home/covid-live-reports";
+import { CovidPrecautions } from "@/components/home/covid-precautions";
+import { CovidPreventions } from "@/components/home/covid-preventions";
+import CovidStatistics from "@/components/home/covid-statistics";
+import DiseaseInfo from "@/components/home/disease-info";
+import HeroSection from "@/components/home/hero-section";
+import { SymptomsSection } from "@/components/home/symptoms-section";
 
 export default function Home() {
   return (
-    <div>
+    <div className="relative">
       {/* Hero Section */}
       <HeroSection />
 
@@ -27,7 +26,6 @@ export default function Home() {
       <CovidLiveReports />
       <ContactForm />
       <CoronavirusExperts />
-      <Footer />
     </div>
   );
 }

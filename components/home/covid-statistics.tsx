@@ -1,7 +1,7 @@
 import Image from "next/image";
+import { Card } from "../ui/card";
 import SubTitle from "./sub-title";
-import Title from "./titel";
-import { Card } from "./ui/card";
+import Title from "./title";
 
 export default function CovidStatistics() {
   return (

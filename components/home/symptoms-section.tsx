@@ -3,7 +3,7 @@
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import SubTitle from "./sub-title";
-import Title from "./titel";
+import Title from "./title";
 
 interface SymptomProps {
   icon: string;

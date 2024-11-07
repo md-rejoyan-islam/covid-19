@@ -1,8 +1,9 @@
 import { Check } from "lucide-react";
 import Image from "next/image";
+
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import SubTitle from "./sub-title";
-import Title from "./titel";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+import Title from "./title";
 
 export default function DiseaseInfo() {
   return (

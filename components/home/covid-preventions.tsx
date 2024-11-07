@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import SubTitle from "./sub-title";
-import Title from "./titel";
+import Title from "./title";
 
 export function CovidPreventions() {
   const preventions = [

@@ -1,4 +1,4 @@
-import { ArrowIcon } from "./svg";
+import { ArrowIcon } from "../svg";
 
 interface TitleProps {
   title: string;

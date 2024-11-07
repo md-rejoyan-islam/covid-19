@@ -3,7 +3,7 @@
 import { ArrowDown, ArrowUp } from "lucide-react";
 import Image from "next/image";
 import SubTitle from "./sub-title";
-import Title from "./titel";
+import Title from "./title";
 
 interface CountryData {
   name: string;

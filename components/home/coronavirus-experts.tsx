@@ -3,7 +3,7 @@
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import Image from "next/image";
 import SubTitle from "./sub-title";
-import Title from "./titel";
+import Title from "./title";
 
 export function CoronavirusExperts() {
   const experts = [
