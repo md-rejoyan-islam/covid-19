@@ -35,8 +35,8 @@ export default function NotFound() {
           This page is outside of the universe
         </h2>
         <p className="mb-8 text-blue-200">
-          The page you are trying to access doesn't exist or has been moved. Try
-          going back to our homepage.
+          The page you are trying to access doesn&apos;t exist or has been
+          moved. Try going back to our homepage.
         </p>
         <Button
           asChild
