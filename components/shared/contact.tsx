@@ -10,13 +10,11 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { format } from "date-fns";
@@ -24,6 +22,8 @@ import { CalendarIcon, Send } from "lucide-react";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
+import Input from "../ui/input";
+import Textarea from "../ui/textarea";
 
 const formSchema = z.object({
   fullName: z.string().min(2, {
