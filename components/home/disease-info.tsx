@@ -7,7 +7,7 @@ import Title from "./title";
 
 export default function DiseaseInfo() {
   return (
-    <section className="py-16 bg-blue-600">
+    <section className="py-16 bg-blue-600 ">
       <div className="container max-w-[1300px] mx-auto px-4">
         <div className="text-center mb-12">
           <SubTitle title="COVID-19" color="text-white" />
@@ -20,7 +20,7 @@ export default function DiseaseInfo() {
               alt="Covid prevention illustration"
               width={520}
               height={300}
-              className=" max-w-[430px] md:max-w-[550px] "
+              className=" max-w-[430px] md:max-w-[550px] w-full "
             />
           </div>
           <div className=" rounded-lg p-6 ">
