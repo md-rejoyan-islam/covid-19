@@ -4,10 +4,10 @@ import SymptomHero from "@/components/symptom/symptomHero";
 
 export default function Symptoms() {
   return (
-    <div>
+    <>
       <SymptomHeaderHero />
       <SymptomHero />
       <SymptomContact />
-    </div>
+    </>
   );
 }

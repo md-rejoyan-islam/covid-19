@@ -29,7 +29,7 @@ export default function TitleCardHeader({
           className="w-16 absolute -top-6 -left-6 z-20"
         />
         <h2
-          className={`relative z-10 mx-auto rounded-xl  px-8 py-4 text-3xl font-bold  sm:text-3xl md:text-4xl ${titleColor} ${titleBgColor}`}
+          className={`relative z-10 mx-auto rounded-xl  px-8 py-4 text-2xl font-bold  sm:text-3xl md:text-4xl ${titleColor} ${titleBgColor}`}
         >
           {title}
         </h2>

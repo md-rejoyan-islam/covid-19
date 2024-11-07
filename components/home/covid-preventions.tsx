@@ -93,11 +93,11 @@ export function CovidPreventions() {
           <SubTitle title="COVID-19" color="text-[#ef4d27]" />
           <Title title="Preventions" color="text-[#0e6dc5]" />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
           {preventions.map((prevention, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 border-b-4 border-blue-600"
+              className="bg-white rounded-lg  shadow-lg p-6 transform transition duration-300 hover:scale-105 border-b-4 border-blue-600"
             >
               <div className="flex flex-col items-center text-center">
                 <div className={`rounded-full p-6 mb-4`}>{prevention.icon}</div>

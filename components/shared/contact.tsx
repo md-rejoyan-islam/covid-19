@@ -74,7 +74,7 @@ export function Contact({ children }: { children: React.ReactNode }) {
               onSubmit={form.handleSubmit(onSubmit)}
               className="space-y-4 order-2 md:order-1 max-w-[450px] md:max-w-full  mx-auto w-full "
             >
-              <div className="lg:grid-cols-2 grid grid-cols-1 gap-x-4">
+              <div className="lg:grid-cols-2 grid grid-cols-1 gap-x-4 gap-y-4">
                 <FormField
                   control={form.control}
                   name="fullName"
@@ -118,73 +118,68 @@ export function Contact({ children }: { children: React.ReactNode }) {
                 />
               </div>
 
-              <div className="">
-                <div className="lg:grid-cols-2 grid grid-cols-1 gap-x-4">
+              <div className="lg:grid-cols-2 grid grid-cols-1 gap-x-4 gap-y-4">
+                <FormField
+                  control={form.control}
+                  name="phone"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Phone Number</FormLabel>
+                      <FormControl>
+                        <Input
+                          placeholder="Enter your phone number"
+                          type="tel"
+                          className="border-red-400 focus-visible:ring-red-400"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+
+                <div className="h-full flex justify-center items-end w-full">
                   <FormField
                     control={form.control}
-                    name="phone"
+                    name="date"
                     render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Phone Number</FormLabel>
-                        <FormControl>
-                          <Input
-                            placeholder="Enter your phone number"
-                            type="tel"
-                            className="border-red-400 focus-visible:ring-red-400"
-                            {...field}
-                          />
-                        </FormControl>
+                      <FormItem className="flex flex-col w-full">
+                        <FormLabel>Date</FormLabel>
+                        <Popover>
+                          <PopoverTrigger asChild>
+                            <FormControl>
+                              <Button
+                                variant="outline"
+                                className={cn(
+                                  "w-full pl-3 text-left font-normal border-red-400 focus-visible:ring-red-400",
+                                  !field.value && "text-muted-foreground"
+                                )}
+                              >
+                                {field.value ? (
+                                  format(field.value, "dd/MM/yyyy")
+                                ) : (
+                                  <span>dd/mm/yyyy</span>
+                                )}
+                                <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
+                              </Button>
+                            </FormControl>
+                          </PopoverTrigger>
+                          <PopoverContent className="w-auto p-0" align="start">
+                            <Calendar
+                              mode="single"
+                              selected={field.value}
+                              onSelect={field.onChange}
+                              disabled={(date) =>
+                                date < new Date() ||
+                                date < new Date("1900-01-01")
+                              }
+                            />
+                          </PopoverContent>
+                        </Popover>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
-
-                  <div className="h-full flex justify-center items-end w-full">
-                    <FormField
-                      control={form.control}
-                      name="date"
-                      render={({ field }) => (
-                        <FormItem className="flex flex-col w-full">
-                          <FormLabel>Date</FormLabel>
-                          <Popover>
-                            <PopoverTrigger asChild>
-                              <FormControl>
-                                <Button
-                                  variant="outline"
-                                  className={cn(
-                                    "w-full pl-3 text-left font-normal border-red-400 focus-visible:ring-red-400",
-                                    !field.value && "text-muted-foreground"
-                                  )}
-                                >
-                                  {field.value ? (
-                                    format(field.value, "dd/MM/yyyy")
-                                  ) : (
-                                    <span>dd/mm/yyyy</span>
-                                  )}
-                                  <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
-                                </Button>
-                              </FormControl>
-                            </PopoverTrigger>
-                            <PopoverContent
-                              className="w-auto p-0"
-                              align="start"
-                            >
-                              <Calendar
-                                mode="single"
-                                selected={field.value}
-                                onSelect={field.onChange}
-                                disabled={(date) =>
-                                  date < new Date() ||
-                                  date < new Date("1900-01-01")
-                                }
-                              />
-                            </PopoverContent>
-                          </Popover>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                  </div>
                 </div>
               </div>
 
