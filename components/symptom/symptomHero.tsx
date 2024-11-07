@@ -1,13 +1,5 @@
-import { Circle, Hash } from "lucide-react";
 import Image from "next/image";
 import TitleCardHeader from "../shared/title-card-header";
-
-const VirusIcon = ({ className }: { className?: string }) => (
-  <div className={`relative ${className}`}>
-    <Circle className="h-full w-full" />
-    <Hash className="absolute left-1/2 top-1/2 h-3/4 w-3/4 -translate-x-1/2 -translate-y-1/2 transform" />
-  </div>
-);
 
 export default function SymptomHero() {
   const symptoms = [
