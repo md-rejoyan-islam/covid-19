@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+
 import {
   Facebook,
   Instagram,
@@ -11,6 +11,7 @@ import {
   Send,
   Twitter,
 } from "lucide-react";
+import Input from "../ui/input";
 
 export function Footer() {
   const handleSubmit = (e: React.FormEvent) => {
