@@ -11,11 +11,6 @@ import {
 } from "lucide-react";
 
 export function Footer() {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle newsletter submission
-  };
-
   return (
     <div>
       <footer className="bg-[#1a0046] text-white pt-16 pb-10 h-fit">
