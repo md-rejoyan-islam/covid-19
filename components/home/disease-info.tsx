@@ -20,7 +20,7 @@ export default function DiseaseInfo() {
               alt="Covid prevention illustration"
               width={520}
               height={300}
-              className=" max-w-[430px] md:max-w-[550px] w-full "
+              className=" max-w-[430px] md:max-w-[550px] w-full animate-bounce "
             />
           </div>
           <div className=" rounded-lg p-6 ">

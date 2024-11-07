@@ -97,7 +97,7 @@ export function CovidPreventions() {
           {preventions.map((prevention, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg  shadow-lg p-6 transform transition duration-300 hover:scale-105 border-b-4 border-blue-600"
+              className="bg-white rounded-lg hover:animate-[bounce_1s] duration-500   shadow-lg p-6 transform transition  border-b-4 border-blue-600"
             >
               <div className="flex flex-col items-center text-center">
                 <div className={`rounded-full p-6 mb-4`}>{prevention.icon}</div>

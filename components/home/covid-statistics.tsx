@@ -93,11 +93,11 @@ function StatCard({
 }: StatCardProps) {
   return (
     <Card
-      className={`${color} text-white p-6 rounded-lg w-full max-w-[400px]  shadow-lg ${
+      className={`${color} text-white p-6 rounded-lg hover:animate-[bounce_1s] group w-full max-w-[400px]  shadow-lg ${
         color === "bg-white" ? "text-gray-900" : ""
       }`}
     >
-      <div className="flex flex-col items-center space-y-1 ">
+      <div className="flex flex-col items-center space-y-1 group-hover:scale-110 duration-500 transition-all ">
         {icon}
         <span className="text-3xl font-bold pt-4">{number}</span>
         <span className="text-[16px]">{label}</span>

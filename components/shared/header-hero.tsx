@@ -6,12 +6,32 @@ export default function HeaderHero({ page }: { page: string }) {
   return (
     <div className="relative  overflow-hidden bg-white bg-[url('/contagionPage/contagion-bg.png')]  bg-cover bg-center bg-no-repeat">
       {/* Main Content */}
-      <div className="container relative mx-auto px-4 pt-28">
+      <div className=" relative mx-auto  pt-28 px-4">
         {/* Navigation */}
 
         {/* Hero Content */}
         <div className="grid gap-20 lg:grid-cols-2 ">
-          <div className="flex justify-center items-center w-full flex-col">
+          <div className="flex justify-center items-center w-full flex-col relative">
+            {/* animated virus */}
+            <div className="absolute top-10 lg:top-0 left-0 lg:right-4 ">
+              <Image
+                src="/mv-virus-2.png"
+                alt="Virus illustration"
+                width={400}
+                height={400}
+                className=" delay-0 ease-linear w-[40px]  animate-[bounce_.7s_infinite] mx-auto"
+              />
+            </div>
+            {/* animated virus  */}
+            <div className="absolute -top-20 lg:top-20 right-0   ">
+              <Image
+                src="/mv-virus-1.png"
+                alt="Virus illustration"
+                width={400}
+                height={400}
+                className=" delay-0 ease-linear w-[120px]  animate-[spin_25s_infinite] mx-auto"
+              />
+            </div>
             <div className="pt-8 w-full">
               <h1 className="mb-4 text-5xl text-center font-bold text-purple-900 md:text-6xl lg:text-7xl w-full">
                 Coronavirus
@@ -38,15 +58,6 @@ export default function HeaderHero({ page }: { page: string }) {
 
           {/* Illustration */}
           <div className="relative">
-            {/* Plant Decoration */}
-            {/* <div className="absolute bottom-0 right-12 h-32 w-24">
-              <div className="relative h-full w-full">
-                <div className="absolute bottom-0 left-1/2 h-24 w-4 -translate-x-1/2 bg-green-500 transform-gpu" />
-                <div className="absolute bottom-12 left-1/2 h-16 w-8 -translate-x-1/2 rotate-45 bg-green-400 transform-gpu" />
-                <div className="absolute bottom-8 left-1/2 h-16 w-8 -translate-x-1/2 -rotate-45 bg-green-300 transform-gpu" />
-              </div>
-            </div> */}
-
             {/* Person Illustration */}
             <div className="relative ">
               <Image
