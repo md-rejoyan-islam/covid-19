@@ -68,7 +68,7 @@ export function StickyNavbar() {
     <div className="">
       <header
         className={cn(
-          ` top-0 z-50 fixed  h-fit left-0   delay-100 duration-500  w-full  transition-all`,
+          ` top-0 z-[1000] fixed  h-fit left-0   delay-100 duration-500  w-full  transition-all`,
           isScrolled
             ? "bg-[#0e6dc5] shadow-md mt-0 text-white"
             : ` md:-mt-[1px]  md:bg-transparent bg-[#0e6dc5]  ${
