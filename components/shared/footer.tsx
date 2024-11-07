@@ -52,7 +52,7 @@ export function Footer() {
               <div className="space-y-4">
                 <div className="flex items-center gap-3 text-gray-300">
                   <Phone className="h-5 w-5" />
-                  <span>(+88)01111-222222</span>
+                  <span>(+88)01568-816822</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-300">
                   <Send className="h-5 w-5" />
@@ -65,7 +65,7 @@ export function Footer() {
                 </div>
                 <div className="flex items-center gap-3 text-gray-300">
                   <MapPin className="h-5 w-5" />
-                  <span>Dhaka, Bangladesh</span>
+                  <span>Sylhet, Bangladesh</span>
                 </div>
               </div>
             </div>
@@ -79,14 +79,31 @@ export function Footer() {
               </p>
               <div className="flex gap-4">
                 {[
-                  { icon: Facebook, label: "Facebook" },
-                  { icon: Instagram, label: "Instagram" },
-                  { icon: Linkedin, label: "LinkedIn" },
-                  { icon: Twitter, label: "Twitter" },
-                ].map(({ icon: Icon, label }) => (
+                  {
+                    icon: Facebook,
+                    label: "Facebook",
+                    href: "https://www.facebook.com/md.rej0yan.islam",
+                  },
+                  {
+                    icon: Instagram,
+                    label: "Instagram",
+                    href: "https://www.instagram.com/md.rejoyan.islam",
+                  },
+                  {
+                    icon: Linkedin,
+                    label: "LinkedIn",
+                    href: "https://x.com/md_rejoyanislam",
+                  },
+                  {
+                    icon: Twitter,
+                    label: "Twitter",
+                    href: "https://www.linkedin.com/in/md-rejoyan-islam",
+                  },
+                ].map(({ icon: Icon, label, href }) => (
                   <a
+                    target="_blank"
                     key={label}
-                    href={`#${label.toLowerCase()}`}
+                    href={href}
                     className="p-2 border border-gray-600 rounded hover:bg-white/10 transition-colors"
                     aria-label={label}
                   >

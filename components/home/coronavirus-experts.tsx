@@ -2,6 +2,7 @@
 
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import SubTitle from "./sub-title";
 import Title from "./title";
 
@@ -67,25 +68,45 @@ export function CoronavirusExperts() {
                       className="border h-8 w-8 p-1.5 bg-white  rounded-full flex items-center justify-center cursor-pointer 
                     hover:animate-[spin_.5s]"
                     >
-                      <Facebook />
+                      <Link
+                        href="https://www.facebook.com/md.rej0yan.islam"
+                        target="_black"
+                      >
+                        <Facebook />
+                      </Link>
                     </li>
                     <li
                       className="border h-8 w-8 p-1.5 bg-white  rounded-full flex items-center justify-center cursor-pointer 
                     hover:animate-[spin_.5s]"
                     >
-                      <Instagram />
+                      <Link
+                        href={"https://www.instagram.com/md.rejoyan.islam"}
+                        target="_black"
+                      >
+                        <Instagram />
+                      </Link>
                     </li>
                     <li
                       className="border h-8 w-8 p-1.5 bg-white  rounded-full flex items-center justify-center cursor-pointer 
                     hover:animate-[spin_.5s]"
                     >
-                      <Twitter />
+                      <Link
+                        href={"https://x.com/md_rejoyanislam"}
+                        target="_black"
+                      >
+                        <Twitter />
+                      </Link>
                     </li>
                     <li
                       className="border h-8 w-8 p-1.5 bg-white  rounded-full flex items-center justify-center cursor-pointer 
                     hover:animate-[spin_.5s]"
                     >
-                      <Linkedin />
+                      <Link
+                        href="https://www.linkedin.com/in/md-rejoyan-islam"
+                        target="_black"
+                      >
+                        <Linkedin />
+                      </Link>
                     </li>
                   </ul>
                 </div>
