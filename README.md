@@ -92,5 +92,14 @@ For any issues or feature requests, please contact the development team or creat
 
 ## Necessary Links
 
-- [Website](https://covid-19-nextjs.vercel.app/)
+- [Website Preview](https://covid-19-nextjs.vercel.app/)
 - [GitHub Repository](https://github.com/md-rejoyan-islam/covid-19)
+
+### CONTACT
+
+If you have any questions or suggestions, feel free to reach out:
+
+- Email : rejoyanislam0014@gmail.com
+- GitHub : [Rejoyan Islam GitHub](https://github.com/md-rejoyan-islam)
+- LinkedIn : [Rejoyan Islam LinkedIn](https://www.linkedin.com/in/md-rejoyan-islam/)
+- Personal Website : [Rejoyan Islam Portfolio](https://md-rejoyan-islam.github.io/)
