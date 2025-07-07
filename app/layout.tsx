@@ -1,8 +1,11 @@
 import { Footer } from "@/components/shared/footer";
 import { StickyNavbar } from "@/components/shared/sticky-navbar";
+import { Toaster } from "@/components/ui/sonner";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Suspense } from "react";
 import "./globals.css";
+import Loading from "./loading";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,18 +29,22 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  await new Promise((resolve) => setTimeout(resolve, 3000));
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <StickyNavbar />
-        <main>{children}</main>
+        <Suspense fallback={<Loading />}>
+          <main>{children}</main>
+        </Suspense>
+        <Toaster />
         <Footer />
       </body>
     </html>

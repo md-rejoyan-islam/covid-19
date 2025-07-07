@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import TitleCardHeader from "../shared/title-card-header";
 
@@ -26,7 +24,7 @@ export function CovidSpreadSection() {
   ];
 
   return (
-    <div className="bg-[url('/contagionPage/spread-1.png')]  bg-cover bg-center bg-no-repeat">
+    <section className="bg-[url('/contagionPage/spread-1.png')]  bg-cover bg-center bg-no-repeat">
       <div className="container mx-auto px-4 py-16 max-w-[1300px] ">
         {/* Header Section */}
         <TitleCardHeader
@@ -79,6 +77,6 @@ export function CovidSpreadSection() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

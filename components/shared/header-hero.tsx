@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -72,12 +71,6 @@ export default function HeaderHero({ page }: { page: string }) {
           </div>
         </div>
       </div>
-
-      {/* <style jsx>{`
-        .clip-diagonal {
-          clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-        }
-      `}</style> */}
     </div>
   );
 }

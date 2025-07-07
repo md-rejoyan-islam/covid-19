@@ -21,6 +21,7 @@ import { format } from "date-fns";
 import { CalendarIcon, Send } from "lucide-react";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 import * as z from "zod";
 import Input from "../ui/input";
 import Textarea from "../ui/textarea";
@@ -57,8 +58,9 @@ export function Contact({ children }: { children: React.ReactNode }) {
   });
 
   const onSubmit = (data: FormValues) => {
+    toast.success("Form submitted successfully!");
+    form.reset();
     console.log(data);
-    // Handle form submission
   };
 
   return (

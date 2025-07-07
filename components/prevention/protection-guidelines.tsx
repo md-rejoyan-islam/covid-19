@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 
 import { Card, CardContent } from "@/components/ui/card";
@@ -62,7 +60,7 @@ export function ProtectionGuidelines() {
   };
 
   return (
-    <div className=" bg-[url('/preventionPage/prevention-inner.png')]  bg-cover bg-center bg-no-repeat px-4 py-16">
+    <section className=" bg-[url('/preventionPage/prevention-inner.png')]  bg-cover bg-center bg-no-repeat px-4 py-16">
       {/* Header Section */}
 
       <TitleCardHeader
@@ -155,6 +153,6 @@ export function ProtectionGuidelines() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

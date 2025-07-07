@@ -1,9 +1,6 @@
-"use client";
-
-import Image from "next/image";
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
 import TitleCardHeader from "../shared/title-card-header";
 
 export function ImmunizationSection() {
@@ -67,7 +64,7 @@ export function ImmunizationSection() {
   ];
 
   return (
-    <div className="min-h-screen bg-blue-950 px-4 ">
+    <section className="min-h-screen bg-blue-950 px-4 ">
       <div className="mx-auto max-w-6xl bg-[#f0f6fc] rounded-full py-16 px-4">
         <TitleCardHeader
           title="Immunization Tips"
@@ -182,6 +179,6 @@ export function ImmunizationSection() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
