@@ -1,105 +1,81 @@
-# COVID-19
+# COVID-19 Information Website
 
-## Overview
+<p align="center">
+  <a href="https://covid-19-nextjs.vercel.app/" target="_blank">
+    <img src="https://raw.githubusercontent.com/md-rejoyan-islam/covid-19/main/public/banner/banner.png" alt="COVID-19" width="100%">
+  </a>
+</p>
 
-This documentation provides an overview of the COVID-19 information website built with Next.js and hosted on Vercel. The website aims to provide up-to-date information about the COVID-19 pandemic, including statistics, preventive measures, and resources.
+<p align="center">
+  <a href="https://covid-19-nextjs.vercel.app/">View Demo</a>
+  ·
+  <a href="https://github.com/md-rejoyan-islam/covid-19/issues">Report Bug</a>
+  ·
+  <a href="https://github.com/md-rejoyan-islam/covid-19/issues">Request Feature</a>
+</p>
 
-## Table of Contents
+## About The Project
 
-1. [Features](#features)
-2. [Pages](#pages)
-3. [Technical Stack](#technical-stack)
-4. [Deployment](#deployment)
-5. [Maintenance](#maintenance)
+This project is a COVID-19 information website built with Next.js. It aims to provide the public with accurate and up-to-date information about the COVID-19 pandemic. The website includes detailed sections on symptoms, prevention, and contagion of the virus.
 
-## Features
+### Key Features:
 
-The COVID-19 website includes the following key features:
+- **Home Page:** An overview of the COVID-19, including statistics, prevention methods, and expert information.
+- **Symptoms Page:** Detailed information about the symptoms of COVID-19.
+- **Prevention Page:** Guidelines and best practices to prevent the spread of the virus.
+- **Contagion Page:** Information on how the virus spreads from person to person.
 
-- Real-time global and country-specific COVID-19 statistics
-- Interactive maps showing the spread of the virus
-- Information on preventive measures and symptoms
-- Latest news and updates related to the pandemic
-- Resources for mental health and support during the crisis
+## Built With
 
-## Pages
+This project was built using the following technologies:
 
-### Home Page
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-- Provides an overview of the current global situation
-- Displays key statistics (total cases, recoveries, deaths)
-- Features a world map with country-specific data on hover
+## Getting Started
 
-### Statistics Page
+To get a local copy up and running follow these simple steps.
 
-- Detailed breakdown of COVID-19 statistics
-- Filterable by country and date range
-- Graphical representations of data trends
+### Prerequisites
 
-### Prevention Page
+- npm
 
-- Information on how to protect oneself from COVID-19
-- Guidelines for social distancing, mask-wearing, and hand hygiene
-- Vaccine information and FAQs
+  ```sh
+  npm install npm@latest -g
+  ```
 
-### Symptoms Page
+### Installation
 
-- Comprehensive list of COVID-19 symptoms
-- When to seek medical attention
-- Self-assessment tool
+1.  Clone the repo
 
-### Resources Page
+    ```sh
+    git clone https://github.com/md-rejoyan-islam/covid-19.git
+    ```
 
-- Links to official health organizations (WHO, CDC)
-- Mental health resources
-- Economic support information
+2.  Install NPM packages
 
-### News Page
+    ```sh
+    npm install
+    ```
 
-- Latest updates on COVID-19 research and developments
-- Curated news articles from reputable sources
+3.  Run the development server
 
-## Technical Stack
+    ```sh
+    npm run dev
+    ```
 
-The website is built using the following technologies:
+## Usage
 
-- **Frontend Framework**: Next.js (React-based)
-- **Styling**: Tailwind CSS
-- **Data Fetching**: SWR for real-time data updates
-- **Deployment Platform**: Vercel
-- **Analytics**: Vercel Analytics (inferred)
+The website is designed to be a comprehensive resource for information about COVID-19. Users can navigate through the different pages to learn about the virus, its symptoms, and how to protect themselves.
 
-## Deployment
+## Contact
 
-The website is deployed on Vercel, which provides:
+Project Link: [https://github.com/md-rejoyan-islam/covid-19](https://github.com/md-rejoyan-islam/covid-19)
 
-- Automatic deployments on push to the main branch
-- Preview deployments for pull requests
-- Custom domain support (covid-19-nextjs.vercel.app)
-- SSL certificate for secure connections
+Rejoyan Islam - [rejoyanislam0014@gmail.com](mailto:rejoyanislam0014@gmail.com)
 
-## Maintenance
+Rejoyan Islam - [LinkedIn](https://www.linkedin.com/in/md-rejoyan-islam)
 
-To keep the website up-to-date and functioning properly:
-
-1. Regularly update the data sources for COVID-19 statistics
-2. Keep the Next.js framework and all dependencies updated
-3. Monitor Vercel logs for any errors or performance issues
-4. Regularly review and update content for accuracy
-5. Ensure compliance with health information guidelines and regulations
-
-For any issues or feature requests, please contact the development team or create an issue in the project repository.
-
-## Necessary Links
-
-- [Website Preview](https://covid-19-nextjs.vercel.app/)
-- [GitHub Repository](https://github.com/md-rejoyan-islam/covid-19)
-
-### CONTACT
-
-If you have any questions or suggestions, feel free to reach out:
-
-- Email : rejoyanislam0014@gmail.com
-- GitHub : [Rejoyan Islam GitHub](https://github.com/md-rejoyan-islam)
-- LinkedIn : [Rejoyan Islam LinkedIn](https://www.linkedin.com/in/md-rejoyan-islam/)
-- Personal Website : [Rejoyan Islam Portfolio](https://md-rejoyan-islam.github.io/)
+Rejoyan Islam - [Portfolio](https://md-rejoyan-islam.github.io)
